@@ -1,0 +1,128 @@
+db = {
+    "store_name": "Цветы Голландии",
+    "address": "Московский пр-т., 171" ,
+    "sellers": [
+        {
+            "id": 1,
+            "name": "Иванов Иван",
+            "age": 19,
+            "contacts": {
+                "email": "ivanov@example.com",
+                "phone": "+1234567890"
+            },
+            "hall_id": 1
+        },
+        {
+            "id": 2,
+            "name": "Петрова Анна",
+            "age": 21,
+            "contacts": {
+                "email": "annapetrova@example.com",
+                "phone": "+0987654321"
+            },
+            "hall_id": 2
+        },
+        {
+            "id": 3,
+            "name": "Сидоров Петр",
+            "age": 33,
+            "contacts": {
+                "email": "sidorov@example.com",
+                "phone": "+5678901234"
+            },
+            "hall_id": 3
+        },
+    ],
+    "hall": [
+        {
+            "id": 1,
+            "number": 1,
+            "hall_flowers_id": 1,
+            "sellers_id": [
+                1,
+                3
+            ],
+            "flowers_id": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "id": 2,
+            "number": 4,
+            "hall_flowers_id": 2,
+            "sellers_id": [
+                2,
+                4
+            ],
+            "flowers_id": [
+                1,
+                3
+            ]
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "Смирнова Екатерина",
+            "discount_points": 35,
+            "flowers_id": [
+                1,
+                2
+            ],
+            "contacts": {
+                "email": "smirnova@example.com",
+                "phone": "+1122334455"
+            }
+        },
+        {
+            "id": 2,
+            "name": "Иванова Ольга",
+            "discount_points": 100,
+            "flowers_id": [
+                3
+            ],
+            "contacts": {
+                "email": "ivanova@example.com",
+                "phone": "+9988776655"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Петров Иван",
+            "discount_points": 28,
+            "flowers_id": [
+                1
+            ],
+            "contacts": {
+                "email": "petrov@example.com",
+                "phone": "+3344556677"
+            }
+        }
+    ],
+    "flowers": [
+        {
+            "id": 1,
+            "name": "Розы",
+            "customers_id": [
+                1
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Пионы",
+            "customers_id": [
+                3
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Тюльпаны",
+            "customers_id": [
+                1,
+                2
+            ]
+        }
+    ]
+}
